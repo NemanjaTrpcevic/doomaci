@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i, j, n;
+    printf("dimenzija matrice: ");
+    scanf("%d", &n);
+    double niz[n][n], x;
+    printf("elementi matrice: ");
+    for(i = 0; i<n; i++)
+        for(j=0; j<n; j++)
+                scanf("%lf", &niz[i][j]);
+
+    for(i = 0; i<n; i++)
+    {
+        for(j=0; j<n; j++)
+            {
+                x=niz[i][j];
+                niz[i][j]=niz[j][i];
+                niz[j][i]=x;
+            }
+    }
+    for(i = 0; i<n; i++)
+    {
+        for(j=0; j<n; j++)
+            {
+                printf("%.2lf ", niz[j][i]);
+            }
+    printf("\n");
+    }
+    return 0;
+}
