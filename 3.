@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int x, y;
+    printf("unesite duzinu niza: ");
+    scanf("%d", &x);
+    int niz[x];
+    printf("unesite clanove niza: ");
+    for(i = 0; y < x; y++)
+        scanf("%d", &niz[i]);
+    for(i = 0; y < x; y++)
+  {
+        if(*(niz+y)%3 == 0)
+            printf("%d ", *(niz+y));
+        else
+        continue;
+    }
+}
