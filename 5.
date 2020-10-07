@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int pon(char slovo, char* str)
+{
+    int i, broj = 0;
+    for(i = 0; i<strlen(str); i++)
+    {
+        if(slovo == str[i])
+          br++;
+    }
+    return broj;
+}
+
+int main()
+{
+    char slovo;
+    char str[100];
+    printf("Unesi te rec: ");
+    fflush(stdin);
+    gets(str)
+    printf("Trazeno slovo je: ");
+    scanf("%c", &slovo);
+    printf("%d", pon(slovo, str));
+    return 0;
+}
